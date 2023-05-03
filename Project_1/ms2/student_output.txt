@@ -1,0 +1,164 @@
+Script started on Sun 20 Mar 2022 08:17:53 PM EDT
+==167732== Memcheck, a memory error detector
+==167732== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==167732== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==167732== Command: ms
+==167732== 
+Enter the following:
+abc
+1
+2
+3
+4
+5
+6
+7
+8
+0
+--------
+Aid Management System Version 0.1
+Date: 2022/03/31
+Data file: No file
+---------------------------------
+1- List Items
+2- Add Item
+3- Remove Item
+4- Update Quantity
+5- Sort
+6- Ship Items
+7- New/Open Aid Database
+---------------------------------
+0- Exit
+> abc
+Invalid Integer, retry: 1
+
+****List Items****
+
+Aid Management System Version 0.1
+Date: 2022/03/31
+Data file: No file
+---------------------------------
+1- List Items
+2- Add Item
+3- Remove Item
+4- Update Quantity
+5- Sort
+6- Ship Items
+7- New/Open Aid Database
+---------------------------------
+0- Exit
+> 2
+
+****Add Item****
+
+Aid Management System Version 0.1
+Date: 2022/03/31
+Data file: No file
+---------------------------------
+1- List Items
+2- Add Item
+3- Remove Item
+4- Update Quantity
+5- Sort
+6- Ship Items
+7- New/Open Aid Database
+---------------------------------
+0- Exit
+> 3
+
+****Remove Item****
+
+Aid Management System Version 0.1
+Date: 2022/03/31
+Data file: No file
+---------------------------------
+1- List Items
+2- Add Item
+3- Remove Item
+4- Update Quantity
+5- Sort
+6- Ship Items
+7- New/Open Aid Database
+---------------------------------
+0- Exit
+> 4
+
+****Update Quantity****
+
+Aid Management System Version 0.1
+Date: 2022/03/31
+Data file: No file
+---------------------------------
+1- List Items
+2- Add Item
+3- Remove Item
+4- Update Quantity
+5- Sort
+6- Ship Items
+7- New/Open Aid Database
+---------------------------------
+0- Exit
+> 5
+
+****Sort****
+
+Aid Management System Version 0.1
+Date: 2022/03/31
+Data file: No file
+---------------------------------
+1- List Items
+2- Add Item
+3- Remove Item
+4- Update Quantity
+5- Sort
+6- Ship Items
+7- New/Open Aid Database
+---------------------------------
+0- Exit
+> 6
+
+****Ship Items****
+
+Aid Management System Version 0.1
+Date: 2022/03/31
+Data file: No file
+---------------------------------
+1- List Items
+2- Add Item
+3- Remove Item
+4- Update Quantity
+5- Sort
+6- Ship Items
+7- New/Open Aid Database
+---------------------------------
+0- Exit
+> 7
+
+****New/Open Aid Database****
+
+Aid Management System Version 0.1
+Date: 2022/03/31
+Data file: No file
+---------------------------------
+1- List Items
+2- Add Item
+3- Remove Item
+4- Update Quantity
+5- Sort
+6- Ship Items
+7- New/Open Aid Database
+---------------------------------
+0- Exit
+> 8
+Value out of range [0<=val<=7]: 0
+Exiting Program!
+==167732== 
+==167732== HEAP SUMMARY:
+==167732==     in use at exit: 0 bytes in 0 blocks
+==167732==   total heap usage: 2 allocs, 2 frees, 72,846 bytes allocated
+==167732== 
+==167732== All heap blocks were freed -- no leaks are possible
+==167732== 
+==167732== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+
+Script done on Sun 20 Mar 2022 08:18:08 PM EDT

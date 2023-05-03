@@ -1,0 +1,214 @@
+Script started on Thu 07 Apr 2022 06:50:47 PM EDT
+==230254== Memcheck, a memory error detector
+==230254== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==230254== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==230254== Command: ms
+==230254== 
+Enter the following values: 
+4444
+44444
+11111
+Advil Extra Strength Caplets
+22
+2
+22.22
+221212
+<ENTER>
+------------------------
+SKU: 4444
+Value out of range [10000<=val<=39999]: 44444
+Value out of range [10000<=val<=39999]: 11111
+AMA Item:
+SKU: 11111
+Description: Advil Extra Strength Caplets
+Quantity Needed: 22
+Quantity On Hand: 2
+Unit Price: $22.22
+Expiry date (YYMMDD): 221212
+Handling Instructions, ENTER to skip: 
+------------------------
+Perishable AMA Item:
+11111: Advil Extra Strength Caplets
+Quantity Needed: 22
+Quantity Available: 2
+Unit Price: $22.22
+Needed Purchase Fund: $444.40
+Expiry date: 2022/12/12
+------------------------
+11111 | Advil Extra Strength Caplets        |    2 |   22 |   22.22 | 2022/12/12
+Enter the following values: 
+22222
+Advil
+33
+3
+33.33
+221212
+Keep in room temperature
+------------------------
+SKU: 22222
+AMA Item:
+SKU: 22222
+Description: Advil
+Quantity Needed: 33
+Quantity On Hand: 3
+Unit Price: $33.33
+Expiry date (YYMMDD): 221212
+Handling Instructions, ENTER to skip: Keep in room temperature
+------------------------
+Perishable AMA Item:
+22222: Advil
+Quantity Needed: 33
+Quantity Available: 3
+Unit Price: $33.33
+Needed Purchase Fund: $999.90
+Expiry date: 2022/12/12
+Handling Instructions: Keep in room temperature
+
+------------------------
+22222 | Advil                               |    3 |   33 |   33.33 |*2022/12/12
+------------------------
+Perishable AMA Item:
+12113: Hydrogen peroxide 100ml bottles
+Quantity Needed: 300
+Quantity Available: 275
+Unit Price: $3.99
+Needed Purchase Fund: $99.75
+Expiry date: 2023/11/11
+Handling Instructions: Keep away from direct sunlight
+
+----------------------------------
+Expiry date: 2023/11/11
+----------------------------------
+Perishable AMA Item:
+12345: Baby Formula
+Quantity Needed: 200
+Quantity Available: 140
+Unit Price: $33.99
+Needed Purchase Fund: $2039.40
+Expiry date: 2022/12/12
+
+----------------------------------
+Expiry date: 2022/12/12
+----------------------------------
+Perishable AMA Item:
+12345: TYLENOL Extra Strength For Fast Pain Relief (100 tablets bottle)
+Quantity Needed: 200
+Quantity Available: 40
+Unit Price: $11.99
+Needed Purchase Fund: $1918.40
+Expiry date: 2024/10/22
+
+----------------------------------
+Expiry date: 2024/10/22
+----------------------------------
+Perishable AMA Item:
+11223: Enfamil A+
+Quantity Needed: 38
+Quantity Available: 3
+Unit Price: $38.99
+Needed Purchase Fund: $1364.65
+Expiry date: 2022/11/11
+Handling Instructions: Keep in a dry and cool place
+
+----------------------------------
+Expiry date: 2022/11/11
+----------------------------------
+Perishable AMA Item:
+11111: Advil Extra Strength Caplets
+Quantity Needed: 22
+Quantity Available: 2
+Unit Price: $22.22
+Needed Purchase Fund: $444.40
+Expiry date: 2022/12/12
+
+----------------------------------
+Expiry date: 2022/12/12
+----------------------------------
+Perishable AMA Item:
+22222: Advil
+Quantity Needed: 33
+Quantity Available: 3
+Unit Price: $33.33
+Needed Purchase Fund: $999.90
+Expiry date: 2022/12/12
+Handling Instructions: Keep in room temperature
+
+----------------------------------
+Expiry date: 2022/12/12
+----------------------------------
+==230254== Conditional jump or move depends on uninitialised value(s)
+==230254==    at 0x402360: sdds::Date::read(std::istream&) (Date.cpp:161)
+==230254==    by 0x402773: sdds::operator>>(std::istream&, sdds::Date&) (Date.cpp:243)
+==230254==    by 0x403A38: sdds::Perishable::load(std::basic_ifstream<char, std::char_traits<char> >&) (Perishable.cpp:72)
+==230254==    by 0x401C1C: descriptive() (main_prof.cpp:80)
+==230254==    by 0x40173B: main (main_prof.cpp:24)
+==230254== 
+==230254== Conditional jump or move depends on uninitialised value(s)
+==230254==    at 0x4023A1: sdds::Date::read(std::istream&) (Date.cpp:168)
+==230254==    by 0x402773: sdds::operator>>(std::istream&, sdds::Date&) (Date.cpp:243)
+==230254==    by 0x403A38: sdds::Perishable::load(std::basic_ifstream<char, std::char_traits<char> >&) (Perishable.cpp:72)
+==230254==    by 0x401C1C: descriptive() (main_prof.cpp:80)
+==230254==    by 0x40173B: main (main_prof.cpp:24)
+==230254== 
+==230254== Conditional jump or move depends on uninitialised value(s)
+==230254==    at 0x4023C5: sdds::Date::read(std::istream&) (Date.cpp:173)
+==230254==    by 0x402773: sdds::operator>>(std::istream&, sdds::Date&) (Date.cpp:243)
+==230254==    by 0x403A38: sdds::Perishable::load(std::basic_ifstream<char, std::char_traits<char> >&) (Perishable.cpp:72)
+==230254==    by 0x401C1C: descriptive() (main_prof.cpp:80)
+==230254==    by 0x40173B: main (main_prof.cpp:24)
+==230254== 
+==230254== Conditional jump or move depends on uninitialised value(s)
+==230254==    at 0x402417: sdds::Date::read(std::istream&) (Date.cpp:178)
+==230254==    by 0x402773: sdds::operator>>(std::istream&, sdds::Date&) (Date.cpp:243)
+==230254==    by 0x403A38: sdds::Perishable::load(std::basic_ifstream<char, std::char_traits<char> >&) (Perishable.cpp:72)
+==230254==    by 0x401C1C: descriptive() (main_prof.cpp:80)
+==230254==    by 0x40173B: main (main_prof.cpp:24)
+==230254== 
+==230254== 
+==230254== HEAP SUMMARY:
+==230254==     in use at exit: 0 bytes in 0 blocks
+==230254==   total heap usage: 47 allocs, 47 frees, 111,608 bytes allocated
+==230254== 
+==230254== All heap blocks were freed -- no leaks are possible
+==230254== 
+==230254== Use --track-origins=yes to see where uninitialised values come from
+==230254== ERROR SUMMARY: 4 errors from 4 contexts (suppressed: 0 from 0)
+==230254== 
+==230254== 1 errors in context 1 of 4:
+==230254== Conditional jump or move depends on uninitialised value(s)
+==230254==    at 0x402417: sdds::Date::read(std::istream&) (Date.cpp:178)
+==230254==    by 0x402773: sdds::operator>>(std::istream&, sdds::Date&) (Date.cpp:243)
+==230254==    by 0x403A38: sdds::Perishable::load(std::basic_ifstream<char, std::char_traits<char> >&) (Perishable.cpp:72)
+==230254==    by 0x401C1C: descriptive() (main_prof.cpp:80)
+==230254==    by 0x40173B: main (main_prof.cpp:24)
+==230254== 
+==230254== 
+==230254== 1 errors in context 2 of 4:
+==230254== Conditional jump or move depends on uninitialised value(s)
+==230254==    at 0x4023C5: sdds::Date::read(std::istream&) (Date.cpp:173)
+==230254==    by 0x402773: sdds::operator>>(std::istream&, sdds::Date&) (Date.cpp:243)
+==230254==    by 0x403A38: sdds::Perishable::load(std::basic_ifstream<char, std::char_traits<char> >&) (Perishable.cpp:72)
+==230254==    by 0x401C1C: descriptive() (main_prof.cpp:80)
+==230254==    by 0x40173B: main (main_prof.cpp:24)
+==230254== 
+==230254== 
+==230254== 1 errors in context 3 of 4:
+==230254== Conditional jump or move depends on uninitialised value(s)
+==230254==    at 0x4023A1: sdds::Date::read(std::istream&) (Date.cpp:168)
+==230254==    by 0x402773: sdds::operator>>(std::istream&, sdds::Date&) (Date.cpp:243)
+==230254==    by 0x403A38: sdds::Perishable::load(std::basic_ifstream<char, std::char_traits<char> >&) (Perishable.cpp:72)
+==230254==    by 0x401C1C: descriptive() (main_prof.cpp:80)
+==230254==    by 0x40173B: main (main_prof.cpp:24)
+==230254== 
+==230254== 
+==230254== 1 errors in context 4 of 4:
+==230254== Conditional jump or move depends on uninitialised value(s)
+==230254==    at 0x402360: sdds::Date::read(std::istream&) (Date.cpp:161)
+==230254==    by 0x402773: sdds::operator>>(std::istream&, sdds::Date&) (Date.cpp:243)
+==230254==    by 0x403A38: sdds::Perishable::load(std::basic_ifstream<char, std::char_traits<char> >&) (Perishable.cpp:72)
+==230254==    by 0x401C1C: descriptive() (main_prof.cpp:80)
+==230254==    by 0x40173B: main (main_prof.cpp:24)
+==230254== 
+==230254== ERROR SUMMARY: 4 errors from 4 contexts (suppressed: 0 from 0)
+
+Script done on Thu 07 Apr 2022 06:52:03 PM EDT

@@ -1,0 +1,113 @@
+Script started on Sat 02 Apr 2022 12:01:37 PM EDT
+==60395== Memcheck, a memory error detector
+==60395== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==60395== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==60395== Command: ws
+==60395== 
+Aid Management System
+Date: 2022/03/31
+Data file: No file
+---------------------------------
+1- List Items
+2- Add Item
+3- Remove Item
+4- Update Quantity
+5- Sort
+6- Ship Items
+7- New/Open Aid Database
+---------------------------------
+0- Exit
+> 2
+
+****New/Open Aid Database****
+Enter file name: data.dat
+6 records loaded!
+
+Aid Management System
+Date: 2022/03/31
+Data file: data.dat
+---------------------------------
+1- List Items
+2- Add Item
+3- Remove Item
+4- Update Quantity
+5- Sort
+6- Ship Items
+7- New/Open Aid Database
+---------------------------------
+0- Exit
+> 2
+
+****Add Item****
+1- Perishable
+2- Non-Perishable
+-----------------
+0- Exit
+> 1
+SKU: 22222
+AMA Item:
+SKU: 22222
+Description: Rice
+Quantity Needed: 200
+Quantity On Hand: 100
+Unit Price: $16.99
+Expiry date (YYMMDD): 241010
+Handling Instructions, ENTER to skip: 
+
+Aid Management System
+Date: 2022/03/31
+Data file: data.dat
+---------------------------------
+1- List Items
+2- Add Item
+3- Remove Item
+4- Update Quantity
+5- Sort
+6- Ship Items
+7- New/Open Aid Database
+---------------------------------
+0- Exit
+> 2
+
+****Add Item****
+1- Perishable
+2- Non-Perishable
+-----------------
+0- Exit
+> 2
+SKU: 44444
+Sku: 44444 is already in the system, try updating quantity instead.
+
+Aid Management System
+Date: 2022/03/31
+Data file: data.dat
+---------------------------------
+1- List Items
+2- Add Item
+3- Remove Item
+4- Update Quantity
+5- Sort
+6- Ship Items
+7- New/Open Aid Database
+---------------------------------
+0- Exit
+> 0
+Exiting Program!
+File: data.dat
+12113	Hydrogen peroxide 100ml bottles	275	300	3.99	Keep away from direct sunlight	231111
+45678	Sleeping Bags	100	200	65.66
+56789	Tents and Blankets and pillows Tents and Blankets and pillows Tents and Blankets and pillows Tents and Blankets and pillows Tents and Blankets and pillows Tents and Blankets and pillows Tents and Blankets and pillows Tents and Blankets and pillows Tents and Blankets and pillows Tents and Blankets and pillows Tents and Blankets and pillows 	2000	2000	65.66
+44444	Flash lights	400	400	65.66
+12345	Baby Formula	145	200	33.99		221212
+11223	Enfamil A+	38	38	38.99	Keep in a dry and cool place	221111
+22222	Rice	100	200	16.99		241010
+==60395== 
+==60395== HEAP SUMMARY:
+==60395==     in use at exit: 0 bytes in 0 blocks
+==60395==   total heap usage: 63 allocs, 63 frees, 119,313 bytes allocated
+==60395== 
+==60395== All heap blocks were freed -- no leaks are possible
+==60395== 
+==60395== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+
+Script done on Sat 02 Apr 2022 12:02:52 PM EDT

@@ -1,0 +1,14 @@
+Name: JUAN PABLO MARTINEZ CARETT
+Seneca Student ID: 112494216
+Seneca email:jpmartinez-carett@myseneca.ca
+Date of completion:04/09/2023
+
+
+
+This project was the most challenging I ever made in the whole program; my issue was not how I could implement the instruction but how I could read the instructions between the lines. Milestone one and two was easy to implement because these two part are similar to all the workshops. But the implementation of milestone three was something different.
+
+First, the instructions are clear, with some gaps where I needed to figure out how I could achieve this instruction with the information that I can have based on the ms1 and ms2
+
+I think one of the problems with ms3  was I had some variables and properties that I did not use in the whole project; for example, in the LineManager module, I did not use m_cntCustomerOrder, I did not understand where I was supposed to use, but I tried to use it with the creation of the constructor LineManager adding the size of the g_pending and g_incomplet,e. Still, after that, I did not know where to use it. 
+
+My second struggle was implementing attemptToMoverorder and run; the main problem with attemptToMoveOrder was understanding the output for the possible cases and how I could validate the potential output. On the other hand, the output for attemptToMoveOrder is a bool value I can use to validate as the output for Run. Still, maybe my problem is the implementation of the attemptToMoveOrder, so I had a problem with the rest of the ms. My solution for Run when I need to check if all the customer orders have been filled or cannot be filled was to check if this the double-ended-queue with CustomerOrders is empty, where if this deque is empty, which means we do not have any order that needs to be filled or cannot because I will move to the next station.

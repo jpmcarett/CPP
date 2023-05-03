@@ -1,0 +1,13 @@
+Name: JUAN PABLO MARTINEZ CARETT
+Seneca Student ID: 112494216
+Seneca email:jpmartinez-carett@myseneca.ca
+ws9part2
+
+
+In this workshop, I could work with binary files, which I did not have the possibility to use in another workshop. The implementation was easy without any issues. But This workshop showed me the opportunity I have when using this kind of file; for example, I can combine any encryption plus the binary file to create a file where I need to protect the information on this file.
+
+When I needed to use thread for the second part of this workshop, the implementation was tricky, but I am unsure if it performed well when I think I the coding style. 
+
+When using the bind function, with the computeAvgFactor and computeVarFactor, I try to use the _1 with the data portion, but the vs show an error I can not understand. That was why I did not implement the bind feature as it should be. On the other hand, I created different Threads depending on how many I needed, but it will be easy to make a vector of Threads that will be created threads depending on the requirement of the application. However, I had some problems when I tried to implement a vector of lines.
+
+The other important part for me in this workshop was the application of std::ref() that I used when I needed to use computeAvgFactor and computeVarFactor; without that feature, my .cpp file did not work correctly
